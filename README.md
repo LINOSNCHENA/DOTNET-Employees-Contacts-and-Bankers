@@ -3,28 +3,23 @@
 ## COMMANDS 
 
 ```
-
 dotnet restore
 dotnet list package
+
 Add-Migration "InitialCreate"
 Update-Database
 dotnet watch run
 
-SELECT * FROM INFORMATION_SCHEMA.SCHEMATA   
-dotnet add package Microsoft.EntityFrameworkCore.Tools  
-
 ```
 
-
-
-## DATABASE ENVIROMENT -2
+## DATABASE ENVIROMENT 
 
 1. version #3 Vs #5
 2. AtPort 1344
 3. Disable shared memory
 4. Firewall-MSSQL1433
 5. Start the SQL Browser service
-6. Security- allow SQL
+6. PortA "sslPort": 44321
 7. Security- allow SQL
 8. Require distributed transactiosn for server-to-server communication
 
@@ -37,7 +32,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 
 ```
 
-## THREE OBJECTS -4
+## OBJECTS CONTROLLED
 
 1. Worker-Employee
 2. Contact
@@ -48,6 +43,5 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 Below are some Screens shots from the application
 
 ![ Muntu#1 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
-![ Muntu#2 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
-![ Muntu#3 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
-![ Muntu#4 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
+![ Muntu#2 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page2.png)
+

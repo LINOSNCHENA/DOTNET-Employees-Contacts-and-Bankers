@@ -1,14 +1,13 @@
 <div class="container">
     <div style="margin:100px;">
 
-        <h2 style="text-align:center"> ACTIVE RECORD (SMART-AT)</h2>
+        <h2 style="text-align:center"> ZANACO ACTIVE BANKERS RECORD </h2>
         <br />
         <div class="row">
-
             <div class="col-md-5">
                 <form [formGroup]="adminactiveForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
-                        <label for="adminactiveName">Full Names</label>
+                        <label for="adminactiveName">Fullnames</label>
                         <input type="text" id="adminactiveName" class="form-control" formControlName="name"
                             placeholder="Enter Name here">
                     </div>
@@ -16,22 +15,21 @@
                         <label for="adminactiveEmail">Email</label>
                         <input type="text" id="adminactiveEmail" class="form-control" formControlName="email"
                             placeholder="Enter Email here" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We will never share your email with any one
-                            else</small>
+                        <small id="emailHelp" class="form-text text-muted">Only company email accepted                       else</small>
                     </div>
 
                     <div class="form-group">
-                        <label for="adminactivePassword">Mobile Number</label>
+                        <label for="adminactivePassword">Mobilenumber</label>
                         <input type="text" id="adminactiveMobile" class="form-control" formControlName="mobile"
                             placeholder="Enter Mobile number here">
                     </div>
                     <div class="form-group">
-                        <label for="adminactivePassword">Office Number</label>
+                        <label for="adminactivePassword">Officenumber</label>
                         <input type="text" id="adminactiveOffice" class="form-control" formControlName="office"
                             placeholder="Enter Office number here">
                     </div>
                     <div class="form-group">
-                        <label for="adminactivePassword">Admins-Star</label>
+                        <label for="adminactivePassword">Published</label>
                         <input type="text" id="adminactiveStars" class="form-control" formControlName="stars"
                             placeholder="Enter Star Ratings here">
                     </div>
@@ -41,19 +39,19 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-2">
-
-            </div>
+            <!-- <div class="col-md-2"> -->
+<!-- 
+            </div> -->
             <div class="col-md-5">
-                <h4 style="text-align:right"> ALL RECORDS</h4>
+                <h4 style="text-align:right"> Complete list of Bankers </h4>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>No.</th>
                             <th>Name</th>
                             <th>Mobile</th>
-                            <th>Rated</th>
-                            <th>Dated</th>
+                            <th>Published</th>
+                            <th>DateOfCreation</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -65,12 +63,11 @@
                             <td>{{adminactive.name}}</td>
                             <td>{{adminactive.office}}</td>
                             <td>{{adminactive.stars}}</td>
-                            <td>{{adminactive.createdat| date}}</td>
+                            <td>{{adminactive.createdat|date}}</td>
                             <td><button class="btn btn-sm btn-warning" (click)="edit(adminactive.id)">Edit</button></td>
                             <td><button class="btn btn-sm btn-danger" (click)="delete(adminactive.id)">Delete</button>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>

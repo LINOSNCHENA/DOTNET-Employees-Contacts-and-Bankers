@@ -12,8 +12,9 @@ export class AdmistratorComponent implements OnInit {
   adminactiveForm!: FormGroup;
   adminOnDuty!: any;
   adminactiveId!: number;
+  updateDate!:any;
 
-  btnSave = 'Save';
+  btnSave = 'Save Banker';
   constructor(private formBuilder: FormBuilder, private adminactiveService: AdminsService) { }
 
   ngOnInit(): void {
@@ -25,6 +26,7 @@ export class AdmistratorComponent implements OnInit {
       stars: ['']
     });
     this.getadminOnDuty();
+    this.updateDate= new Date().getTime();
   }
 
   onSubmit() {
@@ -33,7 +35,7 @@ export class AdmistratorComponent implements OnInit {
         id: this.adminactiveId,
         name: this.adminactiveForm.controls.name.value,
         email: this.adminactiveForm.controls.email.value,
-        createdat: new Date().getTime(),
+        createdat: this.updateDate,
         office: this.adminactiveForm.controls.office.value,
         mobile: this.adminactiveForm.controls.mobile.value,
         stars: this.adminactiveForm.controls.stars.value
