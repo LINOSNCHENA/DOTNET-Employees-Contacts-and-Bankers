@@ -16,13 +16,10 @@ dotnet watch run
 
 ```
 
-===================================================================
-SELECT \* FROM INFORMATION_SCHEMA.SCHEMATA
-dotnet add package Microsoft.EntityFrameworkCore.Tools
-
+SELECT \* FROM INFORMATION_SCHEMA.SCHEMATA   \
+dotnet add package Microsoft.EntityFrameworkCore.Tools  \
 version #3 Vs #5
 
-===================================================================
 
 ## DATABASE ENVIROMENT -2
 
@@ -32,8 +29,6 @@ version #3 Vs #5
 4. Start the SQL Browser service
 5. Security- allow SQL
 6. Require distributed transactiosn for server-to-server communication
-
-==================================================================================
 
 ## MIGRATION: MSSQL-1: MYSQL-2: POSTGRESS-3:
 
@@ -54,6 +49,7 @@ version #3 Vs #5
 
 Below are some Screens shots from the application
 
-![ Muntu#1 ](<https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(1).png>)
-![ Muntu#2 ](<https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(2).png>)
-![ Muntu#3 ](https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(3).png
+![ Muntu#1 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
+![ Muntu#2 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
+![ Muntu#3 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
+![ Muntu#4 ](https://github.com/LINOSNCHENA/DOTNET-Phone-book/blob/master/UXViews/page1.png)
