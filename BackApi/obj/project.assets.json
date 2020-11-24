@@ -8920,11 +8920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\linos\\Downloads\\ZAMBIAN\\BACKEND\\BACKEND.csproj",
+      "projectUniqueName": "C:\\Users\\linos\\Downloads\\phoneBook\\BackApi\\BACKEND.csproj",
       "projectName": "BACKEND",
-      "projectPath": "C:\\Users\\linos\\Downloads\\ZAMBIAN\\BACKEND\\BACKEND.csproj",
+      "projectPath": "C:\\Users\\linos\\Downloads\\phoneBook\\BackApi\\BACKEND.csproj",
       "packagesPath": "C:\\Users\\linos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\linos\\Downloads\\ZAMBIAN\\BACKEND\\obj\\",
+      "outputPath": "C:\\Users\\linos\\Downloads\\phoneBook\\BackApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\linos\\AppData\\Roaming\\NuGet\\NuGet.Config",

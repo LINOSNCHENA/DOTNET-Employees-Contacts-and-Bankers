@@ -11,5 +11,9 @@ namespace BACKEND.Controllers.Models
         public DatabaseContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Banker> Bankers { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
+
     }
 }
