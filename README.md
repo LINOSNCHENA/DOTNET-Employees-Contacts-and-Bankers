@@ -1,8 +1,8 @@
-## PHONE-BOOK:-Dotnet with-Angular 
+## PHONE-BOOK:-Dotnet with-Angular
 
+## COMMANDS -1
 
-# COMMANDS -1
-==================================================================
+```
 
 dotnet new sln
 dotnet new webapi --no-https
@@ -14,31 +14,46 @@ Add-Migration "InitialCreate"
 Update-Database
 dotnet watch run
 
-=================================================================
-SELECT * FROM INFORMATION_SCHEMA.SCHEMATA
+```
+
+===================================================================
+SELECT \* FROM INFORMATION_SCHEMA.SCHEMATA
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 
 version #3 Vs #5
 
-=================================================================
+===================================================================
 
-# DATABASE ENVIROMENT -2
+## DATABASE ENVIROMENT -2
 
 1. AtPort 1344
 2. Disable shared memory
 3. Firewall-MSSQL1433
-4. Start the SQL Browser service 
+4. Start the SQL Browser service
 5. Security- allow SQL
 6. Require distributed transactiosn for server-to-server communication
 
 ==================================================================================
-  # MIGRATION: MSSQL-1: MYSQL-2: POSTGRESS-3:
 
+## MIGRATION: MSSQL-1: MYSQL-2: POSTGRESS-3:
+
+```
   "ConnectionStrings": {
     "DevConnection": "Server=localhost;Database=PRESLY;Trusted_Connection=True;MultipleActiveResultSets=True;"
   }
 
-# THREE OBJECTS -4 
+```
+
+## THREE OBJECTS -4
+
 1. Worker-Employee
 2. Contact
 3. Banker
+
+## Interface UX
+
+Below are some Screens shots from the application
+
+![ Muntu#1 ](<https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(1).png>)
+![ Muntu#2 ](<https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(2).png>)
+![ Muntu#3 ](https://github.com/LINOSNCHENA/JAVA-Springboot-and-Theyleaf/blob/master/uXviews/page%20(3).png
