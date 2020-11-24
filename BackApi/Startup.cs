@@ -32,8 +32,8 @@ namespace BACKEND
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+// BARCLAYS1
             services.AddControllers().AddNewtonsoftJson();
-            services.AddControllers();
             services.AddCors();
             services.AddDbContext<DatabaseContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -46,10 +46,10 @@ namespace BACKEND
             {
                 app.UseDeveloperExceptionPage();
             }
-
+// ZANACO2
             app.UseCors(a => a.SetIsOriginAllowed(x => _ = true).AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
-            app.UseHttpsRedirection(); ///app.UseHttpsRedirection();
+            app.UseHttpsRedirection(); 
 
             app.UseRouting();
 
