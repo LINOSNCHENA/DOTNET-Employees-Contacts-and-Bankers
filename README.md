@@ -6,6 +6,8 @@
 dotnet restore
 dotnet list package
 
+********* xxxx *************
+
 Add-Migration "InitialCreate"
 Update-Database
 dotnet watch run
@@ -14,7 +16,7 @@ dotnet watch run
 
 ## DATABASE ENVIROMENT 
 
-1. version #3 Vs #5
+1. Version #3 Vs #5
 2. AtPort 1344
 3. Disable shared memory
 4. Firewall-MSSQL1433
