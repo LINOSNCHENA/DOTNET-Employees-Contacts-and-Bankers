@@ -26,10 +26,11 @@ export class AdmistratorComponent implements OnInit {
       stars: ['']
     });
     this.getadminOnDuty();
-    this.updateDate= new Date().getTime();
+    this.updateDate= new Date();//.getTime();
   }
 
   onSubmit() {
+    console.log('Zambian-Time->',this.updateDate);
     if (this.adminactiveId && this.adminactiveId > 0) {
       const adminactiveDataForUpdate = {
         id: this.adminactiveId,

@@ -6,28 +6,29 @@ import { Injectable } from '@angular/core';
 })
 export class AdminsService {
 
-  baseUrl = 'https://localhost:44321/employees';
+  baseUrl2 = 'http://localhost:5002/Employees';
+  baseUrl = "https://localhost:5002/Employees";
 
   constructor(private httpClient: HttpClient) { }
 
-  saveadminactive(adminactive: any){
+  saveadminactive(adminactive: any) {
     return this.httpClient.post(this.baseUrl, adminactive);
   }
 
-  updateadminactive(adminactive: 
-    { id: number; name: any; email: any; createdat: number; office: any; mobile: any; stars: any; }){
+  updateadminactive(adminactive:
+    { id: number; name: any; email: any; createdat: number; office: any; mobile: any; stars: any; }) {
     return this.httpClient.put(this.baseUrl, adminactive);
   }
 
-  getAlladminactives(){
+  getAlladminactives() {
     return this.httpClient.get(this.baseUrl);
   }
 
-  getadminactiveById(id: string){
+  getadminactiveById(id: string) {
     return this.httpClient.get(this.baseUrl + '/' + id);
   }
 
-  deleteadminactive(id: string){
+  deleteadminactive(id: string) {
     return this.httpClient.delete(this.baseUrl + '/' + id);
   }
 }
